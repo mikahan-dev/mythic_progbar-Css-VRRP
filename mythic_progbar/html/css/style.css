@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "compass/css3";
+
+
+html {
+    overflow: scroll;
+    font-family: 'Inter', sans-serif !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+}
+
+.progress-container {
+    position: absolute;
+    bottom: 10%;
+    width: 20%;
+    display: none;
+}
+
+.progress-bar-container {
+    position: relative;
+    width: 140%;
+    height: 10px;
+    top: 20px;
+        border-radius: 10px;
+    left: -65px;
+    background: #343434;
+}
+
+.progress-labels {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.progress-bar {
+    width: 0%;
+    background: rgb(9, 4, 58);
+    background: linear-gradient(to right, rgb(5, 10, 82) , rgb(0, 4, 255));
+    /* background: linear-gradient(90deg, rgb(50, 39, 155) 0%, rgba(42, 44, 158, 0.651) 100%); */
+    transition: width 0.3s;
+    border-radius: 10px;
+    height: 100% !important;
+    transition-timing-function: ease-out;
+}
+
+.box {
+    position: relative;
+    background: linear-gradient(to right, rgb(5, 10, 82) , rgb(0, 4, 255));
+    width: 42px;
+    height: 42px;
+    top: 15px;
+    left: 117px;
+    transform: rotate(45deg);
+    border-radius: 8px;
+}
+
+.box2{
+
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -35px;
+    left: 124px;
+    color: white;
+}
